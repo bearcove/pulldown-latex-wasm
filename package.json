@@ -25,7 +25,7 @@
   "author": "Amos Wenger <amos@bearcove.net>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bearcove/pulldown-latex-wasm"
+    "url": "git+https://github.com/bearcove/pulldown-latex-wasm.git"
   },
   "license": "MIT",
   "publishConfig": {
