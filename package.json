@@ -1,5 +1,5 @@
 {
-  "name": "pulldown-latex-wasm",
+  "name": "@bearcove/pulldown-latex-wasm",
   "version": "0.1.0",
   "description": "WebAssembly bindings for the pulldown-latex library",
   "main": "index.js",
@@ -27,5 +27,8 @@
     "type": "git",
     "url": "https://github.com/bearcove/pulldown-latex-wasm"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
