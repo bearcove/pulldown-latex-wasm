@@ -1,6 +1,11 @@
 [package]
-name = "pulldown-cmark-wasm"
+name = "pulldown-latex-wasm"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
+pulldown-latex = "0.7.1"
+wasm-bindgen = "0.2.100"
