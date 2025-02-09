@@ -1,7 +1,7 @@
 {
   "name": "@bearcove/pulldown-latex-wasm",
   "type": "module",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "WebAssembly bindings for the pulldown-latex library",
   "main": "pulldown_latex_wasm.js",
   "types": "pulldown_latex_wasm.d.ts",
