@@ -59,7 +59,7 @@ try {
 
   // Step 3: Run wasm-bindgen to generate JavaScript bindings.
   // Here we use the "bundler" target; you can change this to "web" or "nodejs" as needed.
-  runCommand(`wasm-bindgen --target bundler --out-dir ${outDir} ${optimizedWasmPath}`);
+  runCommand(`wasm-bindgen --target bundler --out-dir ${outDir} --out-name ${projectName} ${optimizedWasmPath}`);
 
   // Step 4: Copy package.json into the output (npm/) directory.
   // Ensure the output directory exists.
