@@ -9,3 +9,10 @@ crate-type = ["cdylib"]
 [dependencies]
 pulldown-latex = "0.7.1"
 wasm-bindgen = "0.2.100"
+wee_alloc = "0.4.5"
+
+[profile.release]
+opt-level = "z"   # or "s" for size optimization
+lto = true        # enable Link Time Optimization
+panic = "abort"   # use abort strategy instead of unwinding
+codegen-units = 1 # helps LTO by reducing parallel codegen units

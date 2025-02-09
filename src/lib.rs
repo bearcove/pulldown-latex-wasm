@@ -1,3 +1,6 @@
+#[global_allocator]
+static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
+
 use pulldown_latex::config::DisplayMode;
 use wasm_bindgen::prelude::wasm_bindgen;
 
