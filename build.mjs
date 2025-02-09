@@ -68,12 +68,22 @@ try {
   }
 
   const packageJsonSrc = path.join(process.cwd(), "package.json");
+  const readmeSrc = path.join(process.cwd(), "README.md");
   const packageJsonDest = path.join(outDir, "package.json");
+  const readmeDest = path.join(outDir, "README.md");
+
   if (fs.existsSync(packageJsonSrc)) {
     fs.copyFileSync(packageJsonSrc, packageJsonDest);
     console.log(`Copied package.json to ${packageJsonDest}`);
   } else {
     console.warn(`Warning: package.json not found at ${packageJsonSrc}`);
+  }
+
+  if (fs.existsSync(readmeSrc)) {
+    fs.copyFileSync(readmeSrc, readmeDest);
+    console.log(`Copied README.md to ${readmeDest}`);
+  } else {
+    console.warn(`Warning: README.md not found at ${readmeSrc}`);
   }
 
   console.log("Build and packaging process completed successfully.");
